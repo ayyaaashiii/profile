@@ -5,6 +5,14 @@
     box-sizing: border-box; /* Menambahkan box-sizing agar padding dihitung dalam ukuran elemen */
 }
 
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(3px);
+  }
+  
 /* Styling dasar */
 body {
     font-family: 'Comic Neue', cursive;
@@ -75,7 +83,7 @@ header h1 {
     background-color: #fff;
     color: #333;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #eee;
@@ -163,5 +171,14 @@ footer {
 
     .link-button {
         padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(135deg, #ffcccc, #ffffff), url("bg.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
