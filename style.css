@@ -175,11 +175,3 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        background: linear-gradient(135deg, #ffcccc, #ffffff), url("bg.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
