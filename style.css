@@ -5,24 +5,25 @@
     box-sizing: border-box; /* Menambahkan box-sizing agar padding dihitung dalam ukuran elemen */
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    backdrop-filter: blur(3px);
-  }
-  
-/* Styling dasar */
 body {
     font-family: 'Comic Neue', cursive;
-    background: linear-gradient(135deg, #ff0000, #ffffff);
-    background-image: url("bg.jpeg");
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.6), rgba(255, 255, 255, 0.6)), url("bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
     line-height: 1.6;
     padding: 20px;
     min-height: 100vh;
-    margin: 0; /* Menghilangkan margin default */
+    margin: 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.5); /* lebih transparan biar bg kelihatan */
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(3px);
 }
 
 /* Header styling dengan foto profil di tengah */
